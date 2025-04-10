@@ -1,0 +1,83 @@
+body {
+    background-color: #e6f2ff;
+    padding: 0; 
+    margin: 0; 
+    font-family: Arial, sans-serif; /*lettertype body*/
+}
+
+/* Header met logo en navigatie */
+.header {
+    display: flex; /* Flexbox voor lay-out van de header */
+    align-items: center; /* Verticale uitlijning van items in de header */
+    padding: 10px;
+    position: relative; /* Positie voor het plaatsen van elementen */
+    background-color: #e6f2ff; 
+    z-index: 10; /* Zorgt ervoor dat de header boven andere elementen staat */
+}
+/* Footer */
+.footer {
+    text-align: center; 
+    background-color: #f2f2f2;
+    padding: 20px; /* Zorg voor voldoende ruimte */
+    position: relative; /* Zorgt ervoor dat de footer goed gepositioneerd is */
+    bottom: 0; /* Zorgt ervoor dat het onderaan de pagina staat */
+    width: 100%; 
+}
+
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto; 
+    margin-right: 20px; 
+}
+
+/* Navigatiebalk */
+ul.navigatiebar {
+    display: flex; /* Flexbox voor lay-out van de navigatiebalk */
+    list-style: none; /* Geen opsommingstekens voor de lijst */
+    margin: 0;
+    padding: 0; 
+}
+
+ul.navigatiebar li {
+    margin-left: 15px; /* Ruimte tussen de navigatie-items */
+}
+
+ul.navigatiebar a {
+    color: white; 
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px; 
+    background-color: rgba(0, 0, 0, 0.6); /* Achtergrondkleur van de knoppen */
+    border-radius: 5px; /* Afgeronde hoeken van de knoppen */
+    transition: background-color 0.3s ease; /* Soepele overgang bij hover */
+}
+
+/* Hover effect */
+ul.navigatiebar a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+ul.navigatiebar .active {
+    background-color: #99ccff; 
+}
+
+/* Inhoud van de pagina */
+.content {
+    width: 100%; 
+    padding: 50px 30px; 
+    box-sizing: border-box; /* Houdt padding en margin in beschouwing bij de totale breedte en hoogte */
+    margin-top: 20px; 
+    text-align: left; 
+}
+
+/* Stijlen voor de afbeeldingen in hondenshows */
+.image-container img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    display: block; /* Blokelement voor de afbeelding */
+    margin: 0; /* Geen marge rondom de afbeelding */
+}
